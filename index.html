@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300;400;800;900&family=Raleway:wght@300&family=Roboto:wght@400;500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="main" id="mainDiv">
+        <h2 class="heading" id="hiUser"></h2>
+
+        <div class="formContainer" id="loginWrapper">
+            <form action="#" class="loginForm" id="login">
+                <h2 class="formTitle" id="formTitle">Logga in</h2>
+                <!--Felmeddelande-->
+                <div class="errorMessage">
+                    <p id="errorTxt"></p>
+                </div>
+                <!--Användarnamn-->
+                <div class="forminputGroup" id="usenameDiv">
+                    <input type="text" id="usernameInput" class="formInput" autofocus placeholder="Användarnamn">  
+                </div>
+                <!--Lösenord-->
+                <div class="forminputGroup" id="passwordDiv">
+                    <input type="text" id="passwordInput" class="formInput" autofocus placeholder="Lösenord">
+                </div>
+                <!--Knapp (logga in)-->
+                <button id="loginBtn" class="formBtn">Logga in</button>
+                <!--Knapp (logga in)-->
+                <button id="logoutBtn" class="formBtn formBtn-logout">Logga ut</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
