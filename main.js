@@ -53,7 +53,7 @@ function checkUser (){
 
 function loginSuccess (){
     const user = localStorage.getItem("userName");
-    formTitle.innerText = "Du är nu inloggad som:  " + user;
+    formTitle.innerText = "Du är nu inloggad som: " + user;
 
     let passwordField = document.getElementById("passwordDiv");
     let usernameField = document.getElementById("usernameDiv");
