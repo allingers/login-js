@@ -31,11 +31,11 @@ localStorage.setItem("list of users", JSON.stringify(users));
 
 
 function init () {
-    if (localStorage.getItem = "users") {
+    if (localStorage.getItem  ("userName")){
         loginSuccess();
     }
 }
-
+init();
 
 function checkUser (){
     for (let user of users){
@@ -52,8 +52,8 @@ function checkUser (){
 }
 
 function loginSuccess (){
-
-    formTitle.innerText = "Hej " + usernameInput.value;
+    const user = localStorage.getItem("userName");
+    formTitle.innerText = "Hej " + user;
 
     let passwordField = document.getElementById("passwordDiv");
     let usernameField = document.getElementById("usernameDiv");
